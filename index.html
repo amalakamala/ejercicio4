@@ -15,10 +15,14 @@
 	<div>
     	<button onclick="document.getElementById('player').play();">Reproducir</button>
     	<button onclick="document.getElementById('player').pause();">Pausa</button>
-    	<button onclick="document.getElementById('player').volume -= 0.1;">Bajar Volumen</button>
-    	<button onclick="document.getElementById('player').volume += 0.1;">Subir Volumen</button>
+    	<button onclick="document.getElementById('player').currentTime = 0;;">Stop</button>
+    	<button onclick="document.getElementById('player').currentTime -= 1.5;">Rewind</button>
+		<button onclick="document.getElementById('player').currentTime += 1.5;">forward</button>
+	<!-- 
+		Estos son botones para bajar y subir el volumen, pero no lo estan pidiendo.
+		<button onclick="document.getElementById('player').volume -= 0.1;">Bajar Volumen</button>
+    	<button onclick="document.getElementById('player').volume += 0.1;">Subir Volumen</button> -->
 	</div><br>
-	
 	
 	<script src="assets/js/javascript.js"></script>
 </body>
