@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Audio</title>
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body align="center">	
+	<h1>Yellow Submarine</h1>
+	<p>The Beatles</p>
+	<img src="assets/img/beatles.png" alt="Smiley face" height="300"><br>
+	<audio src="assets/audio/Yellow Submarine-The Beatles.mp3" id='player' controls>
+  		Your browser does not support the <code>audio</code> element.
+	</audio>
+	<div>
+    	<button onclick="document.getElementById('player').play();">Reproducir</button>
+    	<button onclick="document.getElementById('player').pause();">Pausa</button>
+    	<button onclick="document.getElementById('player').volume -= 0.1;">Bajar Volumen</button>
+    	<button onclick="document.getElementById('player').volume += 0.1;">Subir Volumen</button>
+	</div><br>
+	
+	
+	<script src="assets/js/javascript.js"></script>
+</body>
+</html>
